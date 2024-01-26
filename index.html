@@ -20,8 +20,6 @@
         }
 
         button {
-            background-color: #4CAF50;
-            /* Green */
             border: none;
             color: white;
             padding: 15px 32px;
@@ -32,13 +30,20 @@
             margin: 10px;
             cursor: pointer;
         }
+
+        /* Style for the "Spil" button with background image */
+        button.playGame {
+            background-color: #4CAF50; /* Green */
+            background-image: url('https://cdn.discordapp.com/attachments/1053300444853719070/1200542940905340929/Picsart_24-01-26_21-42-44-635.png?ex=65c68fbe&is=65b41abe&hm=c7b3bfe74a183e13f3cce97fc7fca5ad6c667598eacc17d7262de9982b541f8a');
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
 
     <button onclick="openVideo()">Video</button>
     <button onclick="reportProblem()">Problem</button>
-    <button onclick="playGame()">Spil</button>
+    <button onclick="playGame()" class="playGame">Spil</button>
 
     <script>
         function openVideo() {
