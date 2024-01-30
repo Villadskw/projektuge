@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video</title>
+    <title>Your HTML Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 
-<video width="640" height="360" controls>
+<video controls>
     <source src="https://cdn.discordapp.com/attachments/966363047318929428/1201855442649620510/ProjektUge.mp4?ex=65cb561a&is=65b8e11a&hm=be630f10bc11eb7a30c3ca67a71f90dbc260bdc87aa36432b49c4970ccb86a1a" type="video/mp4">
     Your browser does not support the video tag.
 </video>
